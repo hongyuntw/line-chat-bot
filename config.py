@@ -1,0 +1,3 @@
+line_channel_access_token = 'C6dxy9PBhwuG52oRrYwbX/XYbcjt2a+ggYRX+lYXPKwq3jrIEuL6fxgrAs0oUWbsgSImkvnyLXjjUygBr92sYJmkpJuAC7Bz69/GMAB0VaHEW050x7qjJYnuwtTB9dKpKsnY8/TEWrPnEI1wm8DZdgdB04t89/1O/w1cDnyilFU='
+line_channel_secret = '2726c4ba2e107fc8eb3a417d1255f34e'
+my_user_id = 'Uee5bbd6e92f42cb6f6c58e62c1eafe21'

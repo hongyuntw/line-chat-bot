@@ -27,7 +27,7 @@ def experience_flex():
                             "type": "span",
                             "size": "xxs",
                             "weight": "bold",
-                            "text": "2022.02 - Cur\n"
+                            "text": "2022.02 - Current\n"
                         },
                         {
                             "type": "span",
@@ -149,12 +149,12 @@ def award_flex():
                             "type": "span",
                             "size": "xxs",
                             "weight": "bold",
-                            "text": "7th / 402 teams & 最佳創意獎,\n"
+                            "text": "7th / 402 teams & 最佳創意獎\n"
                         },
                         {
                             "type": "span",
                             "size": "xxs",
-                            "text": "\n\n",
+                            "text": "此比賽任務為針對農業文章進行相關標註和資訊擷取，給定兩篇文章判別是否存在 reference 關係。我們利用了傳統的機器學習方法 (TF-IDF, BM25) 以及針對 Deep Learning based 的文本分類方法加以改進來克服此問題。\n\n",
                         },
 
                         {
@@ -172,7 +172,7 @@ def award_flex():
                         {
                             "type": "span",
                             "size": "xxs",
-                            "text": "\n\n",
+                            "text": "主辦單位提供將近七萬張包含手寫中文字的圖片，每張圖片也提供一個該圖片所對應到中文字的標籤，我們的任務，就是透過深度學習自動辨識圖片中的文字。比賽過程中我們利用不同的 Image Pretrained Model (EfficientNet) 以及各式各樣的 ensemble 方法來解決此問題。\n\n",
                         },
 
                         {
@@ -185,12 +185,12 @@ def award_flex():
                             "type": "span",
                             "size": "xxs",
                             "weight": "bold",
-                            "text": "2nd\n"
+                            "text": "2nd / 27 teams\n"
                         },
                         {
                             "type": "span",
                             "size": "xxs",
-                            "text": "\n\n",
+                            "text": "透過使用 Unity 搭配 Microsoft MRTK 工具，利用 HoloLens 2 所提供的各樣功能(例如: 手勢偵測、語音指令、眼部追蹤、空間對應…等等)構想運用於餐飲業的情境，創造新的 解決方案。我們團隊分別根據客戶、老闆、內場人員三種角色的角度，提出多項創新解決 方案，是所有隊伍中提出並實作最多方案的團隊，而最終團隊有幸獲得第二名的成績。\n\n",
                         },
 
                         {
@@ -208,14 +208,14 @@ def award_flex():
                         {
                             "type": "span",
                             "size": "xxs",
-                            "text": "\n\n",
+                            "text": "給定一則新聞，需要抓出新聞裡面涉嫌洗錢的嫌疑人名單，我們利用 BERT based models 嘗試了 Question Answering 以及 NER 融合二元分類來解決此問題。\n\n",
                         },
 
                         {
                             "type": "span",
                             "size": "xs",
                             "weight": "bold",
-                            "text": "Formosa Speech Recognition Challenge 2020 (FSR-2020)"
+                            "text": "Formosa Speech Recognition Challenge 2020 (FSR-2020)\n"
                         },
                         {
                             "type": "span",
@@ -317,15 +317,15 @@ def resume_flex():
                                 "color": "#000000",
                                 "text": "姜宏昀\n(Hung-Yun Chiang)\n"
                             },
+                            # {
+                            #     "type": "span",
+                            #     "text": "Education \n",
+                            #     "weight": "bold",
+                            #     "color": "#0000008F"
+                            # },
                             {
                                 "type": "span",
-                                "text": "Education \n",
-                                "weight": "bold",
-                                "color": "#0000008F"
-                            },
-                            {
-                                "type": "span",
-                                "text": "臺灣科技大學資訊工程系\n清華大學資訊工程所  "
+                                "text": "Email : harrychiang0@gmail.com"
                             }
                             ],
                             "size": "sm",
@@ -346,6 +346,35 @@ def resume_flex():
                         "contents": [
                         {
                             "type": "span",
+                            "text": "Education \n",
+                            "weight": "bold",
+                            "color": "#0000008F"
+                        },
+                        {
+                            "type": "span",
+                            "size": "xs",
+                            # "weight": "bold",
+                            "text": "清華大學資訊工程所 - 碩士在讀\n"
+                        },
+                        # {
+                        #     "type": "span",
+                        #     "size": "xs",
+                        #     "text": "NLP Lab\n"
+                        # },
+                        {
+                            "type": "span",
+                            "size": "xs",
+                            # "weight": "bold",
+                            "text": "臺灣科技大學資訊工程系 - 學士畢業\n\n"
+                        },
+                        # {
+                        #     "type": "span",
+                        #     "size": "xs",
+                        #     "align": "center",
+                        #     "text": "NLP Lab\n\n"
+                        # },
+                        {
+                            "type": "span",
                             "text": "Skills \n",
                             "weight": "bold",
                             "color": "#0000008F"
@@ -364,7 +393,7 @@ def resume_flex():
                         {
                             "type": "span",
                             "size": "xs",
-                            "text": "Python / C / C++\nWeb Framework - Laravel, Angular\nApp - Swift\n\n"
+                            "text": "Python / C / C++ / Java\nWeb Framework - Laravel, Angular, Spring\nApp - Swift\n\n"
                         }
                         ],
                         "wrap": True

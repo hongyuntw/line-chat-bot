@@ -2,18 +2,12 @@
 from flask import Flask, request, abort, render_template
 from urllib.request import urlopen
 from config import line_channel_access_token, line_channel_secret
-from datetime import date
-#from oauth2client.service_account import ServiceAccountCredentials
-from enum import Enum
 from linebot import (
     LineBotApi, WebhookHandler
 )
 from linebot.exceptions import (
     InvalidSignatureError, LineBotApiError
 )
-import random
-import requests
-import json
 import os
 from flex_msg import experience_flex, award_flex, resume_flex
 ################################
@@ -51,40 +45,31 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     text = event.message.text
-    profile = line_bot_api.get_profile(event.source.user_id)
-    
-    if text == "cv":
+    text = text.lower()
+    # profile = line_bot_api.get_profile(event.source.user_id)
+
+    if text == "!cv":
         contents = resume_flex()
         line_bot_api.reply_message(
             event.reply_token,
             FlexSendMessage('歡迎查看姜宏昀的個人簡介', contents)
         )
 
-    elif text == "e":
+    elif text == "!實習":
         contents = experience_flex()
         line_bot_api.reply_message(
             event.reply_token,
             FlexSendMessage('歡迎查看我的實習經歷', contents)
         )
 
-    elif text == "a":
+    elif text == '!競賽' or text == '!比賽':
         contents = award_flex()
         line_bot_api.reply_message(
             event.reply_token,
             FlexSendMessage('歡迎查看我的競賽經驗', contents)
         )
 
-    elif text == "e":
-        pretty_text = "email: "
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text = pretty_text)
-        )
-    elif text == "MORE":
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text = "尚未完成喔")
-        )
+
     
 
 if __name__ == "__main__":

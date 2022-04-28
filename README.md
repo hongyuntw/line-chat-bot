@@ -33,7 +33,7 @@ python app.py
 
 Deploy 至 Heroku
 ```
-npm i heroku
+npm i -g heroku
 heroku login -i
 heroku create [heroku-app-name] # create heroku app by CLI
 heroku git:remote -a [heroku-app-name]

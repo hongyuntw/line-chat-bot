@@ -1,5 +1,9 @@
 # Line chat bot
 
+## QRCode
+
+![QRCode](./QRCode.png)
+
 
 ## 環境設定
 

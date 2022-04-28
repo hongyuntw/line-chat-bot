@@ -48,21 +48,21 @@ def handle_message(event):
     text = text.lower()
     # profile = line_bot_api.get_profile(event.source.user_id)
 
-    if text == "!cv":
+    if text == "cv":
         contents = resume_flex()
         line_bot_api.reply_message(
             event.reply_token,
             FlexSendMessage('歡迎查看姜宏昀的個人簡介', contents)
         )
 
-    elif text == "!實習":
+    elif text == "實習":
         contents = experience_flex()
         line_bot_api.reply_message(
             event.reply_token,
             FlexSendMessage('歡迎查看我的實習經歷', contents)
         )
 
-    elif text == '!競賽' or text == '!比賽':
+    elif text == '競賽' or text == '比賽':
         contents = award_flex()
         line_bot_api.reply_message(
             event.reply_token,

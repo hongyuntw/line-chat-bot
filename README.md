@@ -31,14 +31,11 @@ python app.py
 
 ## 自動部署 Heroku
 
-<a href="https://heroku.com/deploy?template=https://github.com/hongyuntw/line-chat-bot/tree/master">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
-
 Deploy 至 Heroku
 ```
 npm i heroku
 heroku login -i
+heroku create [heroku-app-name] # create heroku app by CLI
 heroku git:remote -a [heroku-app-name]
 ````
 

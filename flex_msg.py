@@ -315,6 +315,7 @@ def resume_flex():
                                 "type": "span",
                                 "weight": "bold",
                                 "color": "#000000",
+                                "aligh" : "center",
                                 "text": "姜宏昀\n(Hung-Yun Chiang)\n"
                             },
                             # {

@@ -2,7 +2,9 @@
 
 
 ## 環境設定
+
 ```
+# python = 3.7.9
 pip install -r requirements.txt
 
 # 開啟flask server

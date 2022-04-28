@@ -274,7 +274,7 @@ def resume_flex():
                 {
                     "type": "image",
                     "url": "https://i.imgur.com/3XF4u4g.jpg",
-                    "aspectMode": "cover",
+                    "aspectMode": "fit",
                     "size": "full"
                 }
                 ],
@@ -285,58 +285,97 @@ def resume_flex():
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
+                # {
+                #     "type": "box",
+                #     "layout": "horizontal",
+                #     "contents": [
+                #     # {
+                #     #     "type": "box",
+                #     #     "layout": "vertical",
+                #     #     "contents": [
+                #     #     {
+                #     #         "type": "image",
+                #     #         "url": "https://i.imgur.com/3XF4u4g.jpg",
+                #     #         "aspectMode": "fit",
+                #     #         "size": "full"
+                #     #     }
+                #     #     ],
+                #     #     "cornerRadius": "100px",
+                #     #     "width": "72px",
+                #     #     "height": "72px"
+                #     # },
+                #     {
+                #         "type": "box",
+                #         "layout": "vertical",
+                #         "contents": [
+                #         {
+                #             "type": "text",
+                #             "contents": [
+                #             {
+                #                 "type": "span",
+                #                 "weight": "bold",
+                #                 "color": "#000000",
+                #                 "aligh" : "center",
+                #                 "text": "姜宏昀\n(Hung-Yun Chiang)\n"
+                #             },
+                #             # {
+                #             #     "type": "span",
+                #             #     "text": "Education \n",
+                #             #     "weight": "bold",
+                #             #     "color": "#0000008F"
+                #             # },
+                #             {
+                #                 "type": "span",
+                #                 "text": "Email : harrychiang0@gmail.com"
+                #             }
+                #             ],
+                #             "size": "sm",
+                #             "wrap": True
+                #         }
+                #         ]
+                #     }
+                #     ],
+                #     # "spacing": "xl",
+                #     "paddingAll": "20px"
+                # },
                 {
                     "type": "box",
-                    "layout": "horizontal",
+                    "layout": "vertical",
                     "contents": [
                     {
-                        "type": "box",
-                        "layout": "vertical",
+                        "type": "text",
                         "contents": [
                         {
-                            "type": "image",
-                            "url": "https://i.imgur.com/3XF4u4g.jpg",
-                            "aspectMode": "fit",
-                            "size": "full"
-                        }
+                            "type": "span",
+                            "weight": "bold",
+                            "color": "#000000",
+                            "offsetEnd": "50px",
+                            "offsetStart": "50px",
+                            "align" : "center",
+                            "text": "姜宏昀"
+                        },
+                        # {
+                        #     "type": "span",
+                        #     "weight": "bold",
+                        #     "color": "#000000",
+                        #     "offsetEnd": "5%",
+                        #     "offsetStart": "5%",
+                        #     "text": "(Hung-Yun Chiang)"
+                        # },
                         ],
-                        "cornerRadius": "100px",
-                        "width": "72px",
-                        "height": "72px"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "vertical",
-                        "contents": [
-                        {
-                            "type": "text",
-                            "contents": [
-                            {
-                                "type": "span",
-                                "weight": "bold",
-                                "color": "#000000",
-                                "aligh" : "center",
-                                "text": "姜宏昀\n(Hung-Yun Chiang)\n"
-                            },
-                            # {
-                            #     "type": "span",
-                            #     "text": "Education \n",
-                            #     "weight": "bold",
-                            #     "color": "#0000008F"
-                            # },
-                            {
-                                "type": "span",
-                                "text": "Email : harrychiang0@gmail.com"
-                            }
-                            ],
-                            "size": "sm",
-                            "wrap": True
-                        }
-                        ]
+                        "wrap": True
                     }
                     ],
-                    # "spacing": "xl",
-                    "paddingAll": "20px"
+                    "margin": "none",
+                    "spacing": "none",
+                    "borderWidth": "none",
+                    "cornerRadius": "none",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    # "offsetStart": "10%",
+                    # "offsetEnd": "10%",
+                    # "offsetBottom": "lg",
+                    "offsetTop": "lg"
                 },
                 {
                     "type": "box",
@@ -347,6 +386,46 @@ def resume_flex():
                         "contents": [
                         {
                             "type": "span",
+                            "weight": "bold",
+                            "color": "#000000",
+                            "offsetEnd": "50px",
+                            "offsetStart": "50px",
+                            "align" : "center",
+                            "text": "(Hung-Yun Chiang)\n"
+                        },
+                        
+                        ],
+                        "wrap": True
+                    }
+                    ],
+                    "margin": "none",
+                    "spacing": "none",
+                    "borderWidth": "none",
+                    "cornerRadius": "none",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    # "offsetStart": "10%",
+                    # "offsetEnd": "10%",
+                    # "offsetBottom": "10px",
+                    "offsetTop": "lg"
+                },
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                    {
+                        "type": "text",
+                        "contents": [
+                        # {
+                        #     "type": "span",
+                        #     "weight": "bold",
+                        #     "color": "#000000",
+                        #     "offsetEnd": "10%",
+                        #     "offsetStart": "10%",
+                        #     "text": "姜宏昀\n(Hung-Yun Chiang)\n"
+                        # },
+                        {
+                            "type": "span",
                             "text": "Education \n",
                             "weight": "bold",
                             "color": "#0000008F"
@@ -355,25 +434,25 @@ def resume_flex():
                             "type": "span",
                             "size": "xs",
                             # "weight": "bold",
-                            "text": "清華大學資訊工程所 - 碩士在讀\n"
+                            "text": "清華大學資訊工程所 NLP Lab - 碩士在讀\n"
                         },
-                        # {
-                        #     "type": "span",
-                        #     "size": "xs",
-                        #     "text": "NLP Lab\n"
-                        # },
+                        {
+                            "type": "span",
+                            "size": "xxs",
+                            "text": "Research Topics :\n• Opinion Summarization\n• Review Based Recommender System\n"
+                        },
                         {
                             "type": "span",
                             "size": "xs",
                             # "weight": "bold",
-                            "text": "臺灣科技大學資訊工程系 - 學士畢業\n\n"
+                            "text": "臺灣科技大學資訊工程系 - 學士畢業\n"
                         },
-                        # {
-                        #     "type": "span",
-                        #     "size": "xs",
-                        #     "align": "center",
-                        #     "text": "NLP Lab\n\n"
-                        # },
+                        {
+                            "type": "span",
+                            "size": "xxs",
+                            # "align": "center",
+                            "text": "Researh Information Retrieval in NLP Lab \n\n"
+                        },
                         {
                             "type": "span",
                             "text": "Skills \n",
@@ -383,7 +462,7 @@ def resume_flex():
                         {
                             "type": "span",
                             "size": "xs",
-                            "text": "Deep Learning of NLP/Speech, Web, App\n\n"
+                            "text": "Deep Learning, Machine Leanring\nWeb, App\n\n"
                         },
                         {
                             "type": "span",
@@ -408,7 +487,7 @@ def resume_flex():
                     "alignItems": "center",
                     "offsetStart": "none",
                     "offsetEnd": "none",
-                    "offsetBottom": "lg",
+                    # "offsetBottom": "lg",
                     "offsetTop": "lg"
                 }
                 ],

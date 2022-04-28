@@ -41,11 +41,42 @@ def callback():
     return 'OK'
 
 
+
+
+@handler.add(FollowEvent)
+def handle_follow_event(event):
+    line_bot_api.reply_message(  # 回復傳入的訊息文字
+        event.reply_token,
+        TemplateSendMessage(
+            alt_text='指令提示',
+            template=ButtonsTemplate(
+                # title='現在有的功能',
+                text='歡迎點擊查看~~',
+                actions=[
+                    MessageTemplateAction(
+                        label='個人簡介',
+                        text='cv'
+                    ),
+                    MessageTemplateAction(
+                        label='實習經驗',
+                        text='實習'
+                    ),
+                    MessageTemplateAction(
+                        label='比賽經驗',
+                        text='比賽'
+                    )
+                ]
+            )
+        )
+    )
+
+
+
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     text = event.message.text
-    text = text.lower()
+    text = text.lower().strip()
     # profile = line_bot_api.get_profile(event.source.user_id)
 
     if text == "cv":
@@ -68,6 +99,31 @@ def handle_message(event):
             event.reply_token,
             FlexSendMessage('歡迎查看我的競賽經驗', contents)
         )
+    elif text == '指令' or text == '提示':
+        line_bot_api.reply_message(  # 回復傳入的訊息文字
+        event.reply_token,
+        TemplateSendMessage(
+            alt_text='指令提示',
+            template=ButtonsTemplate(
+                # title='現在有的功能',
+                text='歡迎點擊查看~~',
+                actions=[
+                    MessageTemplateAction(
+                        label='個人簡介',
+                        text='cv'
+                    ),
+                    MessageTemplateAction(
+                        label='實習經驗',
+                        text='實習'
+                    ),
+                    MessageTemplateAction(
+                        label='比賽經驗',
+                        text='比賽'
+                    )
+                ]
+            )
+        )
+    )
 
 
     

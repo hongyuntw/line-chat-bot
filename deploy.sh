@@ -17,4 +17,4 @@ git push origin master
 # git add .
 # git commit -m "$msg"
 
-git push heroku master
+git push -f heroku master
